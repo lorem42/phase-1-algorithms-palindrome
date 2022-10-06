@@ -1,13 +1,22 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  let newWord = ''
+  for (let i = 0; (i < word.length); i++){
+    newWord += word[word.length - (i + 1)]
+  }
+  return (newWord === word)
 }
-
 /* 
   Add your pseudocode here
+  Iterate over word and create backwards version
+
+  If backwards === forwards, return true
+  else returns false
 */
 
 /*
   Add written explanation of your solution here
+  reverses the word and then returns the boolean of newWord compared to the original word
 */
 
 // You can run `node index.js` to view these console logs
